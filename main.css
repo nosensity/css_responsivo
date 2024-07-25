@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 0.3em solid rgb(145, 145, 145);
+    padding: 0.6em;
+    margin-bottom: 1em;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.about {
+    display: flex;
+}
+
+.container h2 {
+    border-bottom: 0.2em solid black;
+    margin: 0.5em auto;
+}
+
+section .imgloja {
+    max-width: 60%;
+    width: 100%;
+    margin-right: 1em;
+    border: 0.1em solid black;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 5%;
+    list-style: none;
+}
+
+
+.product-list img {
+    display: block;
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.price {
+    font-weight: bold;
+    margin: 0.3em auto;
+}
+
+.product-list button {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    border: 0.2em solid black;
+    background-color: #ffffff;
+    color: black;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .about {
+        display: block;
+    }
+
+    section {
+        margin: 2em auto;
+    }
+
+    section .imgloja {
+        max-width: 100%;
+        width: 100%;
+        border: 0.15em solid black;
+    }
+
+    .product-list {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .about {
+        display: block;
+    }
+
+    section {
+        margin: 2em auto;
+    }
+
+    section .imgloja {
+        max-width: 100%;
+        width: 100%;
+        border: 0.1em solid black;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 2%;
+        row-gap: 2%;
+        list-style: none;
+        margin: 1em auto;
+    }
+}
